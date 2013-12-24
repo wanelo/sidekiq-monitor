@@ -20,12 +20,12 @@ arbitrary redis server and show your Sidekiq stats.
 
 ## Usage
 
-1. Create or decide on a user with which to run the service.
-2. Create a log directory in `/var/log/sidekiq-monitor` in which unicorn
-   logs will be written.
-3. Ensure that the deployment user has write access to the log dir.
-4. Check out Sidekiq Monitor into a directory as the deployment user
-   and install bunlded gems.
+* Create or decide on a user with which to run the service.
+* Create a log directory in `/var/log/sidekiq-monitor` in which unicorn
+  logs will be written.
+* Ensure that the deployment user has write access to the log dir.
+* Check out Sidekiq Monitor into a directory as the deployment user
+  and install bunlded gems.
 
 ```bash
 git clone https://github.com/wanelo/sidekiq-monitor
@@ -33,13 +33,13 @@ pushd sidekiq_monitor
 bundle install --path ~/.sidekiq-monitor-bundle
 ```
 
-5. Create a config file pointing to the redis used by your Sidekiq
-   processes.
+* Create a config file pointing to the redis used by your Sidekiq
+  processes.
 
 ```bash
 cp config/config.yml.example config/config.yml
 ```
 
-6. Edit config.yml with your particular settings
+* Edit config.yml with your particular settings
 
 
