@@ -1,0 +1,4 @@
+sidekiq:
+  url: redis://10.1.1.1/1
+  namespace: sk
+
