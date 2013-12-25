@@ -1,3 +1,3 @@
 class Settings < Settingslogic
-  source "config/config.yml"
+  source (ENV['CONFIG_YML'] || "config/config.yml")
 end
