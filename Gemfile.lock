@@ -5,7 +5,10 @@ GEM
       timers (~> 1.1.0)
     connection_pool (1.2.0)
     json (1.8.1)
+    json (1.8.1-java)
     kgio (2.8.1)
+    puma (2.7.1-java)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-protection (1.5.1)
       rack
@@ -32,9 +35,11 @@ GEM
       raindrops (~> 0.7)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
+  puma
   rack
   settingslogic
   sidekiq
