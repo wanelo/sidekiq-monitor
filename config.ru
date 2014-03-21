@@ -12,4 +12,5 @@ Sidekiq.configure_client do |config|
 end
 
 require 'sidekiq/web'
+require 'sidekiq/pro/web'
 run Sidekiq::Web
